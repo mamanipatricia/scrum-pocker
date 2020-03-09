@@ -1,0 +1,74 @@
+.selected{
+  background: #fefefe !important;
+  box-shadow: 0 3px 5px 0 rgba(0,0,0,.4);
+  /* box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); */
+}
+.card {
+  border-radius: 7px;
+  background: #eee;
+  border: 1px solid #ccc;
+  min-width: 75px;
+  height: 80px;
+  margin: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.card:hover {
+  cursor: pointer;
+  background: #fefefe;
+
+}
+.card-value {
+  font-size: 2em;
+  font-weight: 500;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width:450px;
+  margin:0 auto;
+}
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width:450px;
+  margin:0 auto;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+@media (min-width: 1000px){
+  .results-container {
+    max-width:850px;
+   }
+}
+.btn {
+  padding: 6px 10px;
+  color: white;
+  background: tomato;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.btn:hover {
+  background-color: #b6b5df;
+}
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* creando estilos para la imagen */
+.profile {
+  max-width: 90px;
+  min-width: 90px;
+  max-height: 80px;
+  min-height: 80px;
+  border: 1px solid #3c3c3c;
+  border-radius: 3px;
+}
