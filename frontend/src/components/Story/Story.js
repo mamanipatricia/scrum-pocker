@@ -17,7 +17,7 @@ export const Story = () => {
   return (
     <Router>
       <div>
-        <h3>REPORTES DE VENTAS MENSUALES</h3>
+        <h3>REPORTES DE VENTAS DE PANETONES</h3>
         <p>
           Generar reportes de ventas de panetones dinamicamente con disenos
           personalizados y el logo de la empresa pepito.

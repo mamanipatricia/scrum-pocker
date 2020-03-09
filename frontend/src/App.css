@@ -54,6 +54,7 @@
   border-radius: 5px;
   font-size: 1.2em;
   text-decoration: none;
+  margin-top: 14px;
 }
 .btn:hover {
   background-color: #b6b5df;

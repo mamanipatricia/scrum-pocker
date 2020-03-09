@@ -29,7 +29,7 @@ export const ListOfCards = props => {
         name: localStorage.getItem(`name`)
       })
       .then(response => {
-        const voteData = response.data;
+        // const voteData = response.data;
         console.log(response.data)
         if (!response.data) return
         history.push(`/story/${props.match.params.roomId}/user`);
@@ -55,10 +55,9 @@ export const ListOfCards = props => {
           />
         );
       })}
-      <hr></hr>
       {error && <span>{error}</span>}
       <button onClick={handlerVote} className="btn" disabled={vote == null}>
-        Vote
+        Votar
       </button>
     </div>
   );

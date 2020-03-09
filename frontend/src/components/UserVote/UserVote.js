@@ -7,13 +7,13 @@ export const UserVote = props => {
   const [vote, setVote] = useState('')
   useEffect(() => {
     getCurrentVote()
-  }, [])
+  })
   console.log(props);
 const getCurrentVote = () => {
-  console.log("ghaciendo ina petiio")
+  console.log("haciendo una peticion...")
   let name = localStorage.getItem('name')
-  axios.
-  get(`http://localhost:3000/room/${props.match.params.roomId}/current-vote/${name}`)
+  axios
+  .get(`http://localhost:3000/room/${props.match.params.roomId}/current-vote/${name}`)
   .then(response => {
     const member = response.data
     console.log(member)

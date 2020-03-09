@@ -1,15 +1,15 @@
 import React, { Fragment, useEffect, useState } from "react";
 import { Card } from "../Card/Card";
-import Axios from "axios";
+import axios from "axios";
 
 export const VotesResults = props => {
   const [votes, setVotes] = useState([]);
   useEffect(() => {
     getVotes();
-  }, []);
+  });
 
   const getVotes = () => {
-    Axios.get(`http://localhost:3000/room/${props.match.params.roomId}/results`)
+    axios.get(`http://localhost:3000/room/${props.match.params.roomId}/results`)
       .then(response => {
         const result = response.data;
         setVotes(result);
