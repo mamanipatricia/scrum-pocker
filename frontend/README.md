@@ -7,13 +7,13 @@
 
 Steps to run the Frontend side:
 
-    1. Install the dependencies
+1. Install the dependencies
 
     ```
     $ npm install
     ```
 
-    2. Run the server
+2. Run the server
 
     ```
     $ npm run start
