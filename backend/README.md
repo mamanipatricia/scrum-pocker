@@ -22,12 +22,12 @@ Steps to run the Backend side:
 
 Then the project is going to start, but before connect the database.
 
-NOTE:
+**NOTE:**
 To connect the Data Base type in MongoDB Compass tool:
 
 Look at config file.
 
-backend > config > config.js
+> backend > config > config.js
 
 ```
 IP: 157.245.218.13
