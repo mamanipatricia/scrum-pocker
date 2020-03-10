@@ -30,6 +30,10 @@
   flex-wrap: wrap;
   max-width:450px;
   margin:0 auto;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+
 }
 .results-container {
   display: flex;
@@ -55,15 +59,25 @@
   font-size: 1.2em;
   text-decoration: none;
   margin-top: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 .btn:hover {
-  background-color: #b6b5df;
+  background-color: tomato;
+  box-shadow: 0px 3px 7px #3c3c3c;
+  cursor: pointer;
 }
 .btn:disabled {
   cursor: not-allowed;
   opacity: 0.5;
 }
 
+.button-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* background: green; */
+}
 /* creando estilos para la imagen */
 .profile {
   max-width: 90px;
@@ -72,4 +86,54 @@
   min-height: 80px;
   border: 1px solid #3c3c3c;
   border-radius: 3px;
+}
+
+/* Login */
+.input {
+  padding: 10px 5px;
+  border: 1px solid #6e6c6c;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+}
+*{box-sizing: border-box;}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    /* align-items: center; */
+    align-content: center;
+    width: 400px;
+    margin: 0 auto;
+    margin-right: auto;
+    padding: 12px 0px;
+    /* background: red; */
+}
+.label-input {
+  display: flex;
+  flex-flow: row;
+  flex-direction: row;
+  justify-items:center;
+  margin: 3px;
+}
+/* label */
+.label {
+  width: 110px;
+  /* background: royalblue; */
+}
+
+/* title */
+.title {
+  display: flex;
+  flex-flow: row;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  /* background: green; */
+  text-align: center;
+    width: 500px;
+    margin: 0 auto;
 }

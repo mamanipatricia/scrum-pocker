@@ -33,21 +33,29 @@ export const Login = () => {
   };
   // STORY ES EL ROOM , EL QUE CONTIENE TODO
   return (
-    <div>
-      <p>Enter the scrum poker room:</p>
-      <input
-        type="text"
-        onChange={e => updateRoom(e.target.value)}
-        value={room}
-      />
-      <br />
-      <input
-        type="text"
-        onChange={event => setName(event.target.value)}
-        value={name}
-      />
-      <br />
-      <button onClick={join}>Join</button>
+    <div className="login-container w-1/2 mx-auto">
+      <p>Enter the Scrum Pocker room:</p>
+      <div className="label-input">
+        <label className="label">Room id (*)</label>
+        <input
+          className="input"
+          type="text"
+          onChange={e => updateRoom(e.target.value)}
+          value={room}
+        />
+      </div>
+      <div className="label-input">
+        <label className="label">Name (*)</label>
+        <input
+          className="input"
+          type="text"
+          onChange={event => setName(event.target.value)}
+          value={name}
+        />
+      </div>
+      <div className="button-box">
+        <button className="btn" onClick={join}>Join</button>
+      </div>
     </div>
   );
 };

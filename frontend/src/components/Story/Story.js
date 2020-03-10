@@ -16,7 +16,7 @@ export const Story = () => {
   // HTML
   return (
     <Router>
-      <div>
+      <div className="title">
         <h3>REPORTES DE VENTAS DE PANETONES</h3>
         <p>
           Generar reportes de ventas de panetones dinamicamente con disenos
