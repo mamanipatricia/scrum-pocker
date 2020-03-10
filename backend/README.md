@@ -24,6 +24,7 @@ Then the project is going to start, but before connect the database.
 
 NOTE:
 To connect the Data Base type in MongoDB Compass tool:
+
 Look at config file.
 
 backend > config > config.js
