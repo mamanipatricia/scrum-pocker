@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
@@ -9,18 +9,18 @@ export const UserVote = props => {
     getCurrentVote()
   })
   console.log(props);
-const getCurrentVote = () => {
-  console.log("haciendo una peticion...")
-  let name = localStorage.getItem('name')
-  axios
-  .get(`http://localhost:3000/room/${props.match.params.roomId}/current-vote/${name}`)
-  .then(response => {
-    const member = response.data
-    console.log(member)
-    setName(member.name)
-    setVote(member.vote)
-  })
-}
+  const getCurrentVote = () => {
+    console.log("haciendo una peticion...")
+    let name = localStorage.getItem('name')
+    axios
+      .get(`http://localhost:3000/room/${props.match.params.roomId}/current-vote/${name}`)
+      .then(response => {
+        const member = response.data
+        console.log(member)
+        setName(member.name)
+        setVote(member.vote)
+      })
+  }
   return (
     <div>
       <div
@@ -36,7 +36,11 @@ const getCurrentVote = () => {
         >
           View team results
         </Link>
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div
+          style={{
+            display: "flex",
+          }}>
+
           <div
             style={{
               display: "flex",
@@ -44,11 +48,11 @@ const getCurrentVote = () => {
               alignItems: "center"
             }}
           >
-            <img src="https://avatars.io/gravatar/render" className="profile" alt="usr"/>
-          <span>{name}</span>
+            <img src="https://avatars.io/gravatar/render" className="profile" alt="usr" />
+            <span>{name}</span>
           </div>
           <div className="card">
-          <span className="card-value">{vote}</span>
+            <span className="card-value">{vote}</span>
           </div>
         </div>
       </div>

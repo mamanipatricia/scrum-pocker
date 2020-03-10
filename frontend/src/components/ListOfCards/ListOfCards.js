@@ -57,7 +57,7 @@ export const ListOfCards = props => {
       })}
       {error && <span>{error}</span>}
       <button onClick={handlerVote} className="btn" disabled={vote == null}>
-        Votar
+        Vote
       </button>
     </div>
   );

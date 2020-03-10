@@ -86,6 +86,8 @@
   min-height: 80px;
   border: 1px solid #3c3c3c;
   border-radius: 3px;
+  text-align: center;
+  margin: 3px;
 }
 
 /* Login */
@@ -134,6 +136,10 @@
   align-content: center;
   /* background: green; */
   text-align: center;
-    width: 500px;
-    margin: 0 auto;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.cards-list {
+  text-align: center;
 }
